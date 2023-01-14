@@ -7,6 +7,7 @@ import org.springtutorial.constructInject.Person;
 import org.springtutorial.core.Employ;
 import org.springtutorial.lifeCycle.Drinks;
 import org.springtutorial.lifeCycle.Food;
+import org.springtutorial.lifeCycle.Starters;
 import org.springtutorial.ref.Student;
 
 public class App 
@@ -35,6 +36,10 @@ public class App
         //Implementoing bean life cycle using interface
         Drinks drink = lifeCycleContext.getBean("drink1", Drinks.class);
         System.out.println(drink);
+
+        //Implementoing bean life cycle using Annotations
+        Starters starter = lifeCycleContext.getBean("starter1", Starters.class);
+        System.out.println(starter);
 
 
     }
