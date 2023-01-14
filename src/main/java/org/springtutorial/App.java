@@ -2,6 +2,7 @@ package org.springtutorial;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springtutorial.constructInject.Person;
 import org.springtutorial.core.Employ;
 import org.springtutorial.ref.Student;
 
@@ -14,9 +15,13 @@ public class App
 //        Employ emp1= (Employ) context.getBean("employ1");
 //        System.out.println(emp1);
 
-        ApplicationContext refContext = new ClassPathXmlApplicationContext("refConfig.xml");
-        Student stud1= refContext.getBean("stud1", Student.class);
-        System.out.println(stud1);
+//        ApplicationContext refContext = new ClassPathXmlApplicationContext("refConfig.xml");
+//        Student stud1= refContext.getBean("stud1", Student.class);
+//        System.out.println(stud1);
+
+        ApplicationContext ciContext = new ClassPathXmlApplicationContext("ciConfig.xml");
+        Person p1= ciContext.getBean("p1", Person.class);
+        System.out.println(p1);
 
 
     }
