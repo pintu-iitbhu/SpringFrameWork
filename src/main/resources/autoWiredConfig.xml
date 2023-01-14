@@ -13,6 +13,10 @@
         <constructor-arg value="Java" type="String"/>
         <constructor-arg value="13" type="int"/>
     </bean>
+    <bean class="org.springtutorial.autoWired.Chapter" name="cName1">
+        <constructor-arg value="Java Part2" type="String"/>
+        <constructor-arg value="15" type="int"/>
+    </bean>
 
 <!--    <bean class="org.springtutorial.autoWired.Book" name="book" autowire="byName">-->
 <!--        <property name="bName" value="Spring Conent"/>-->
@@ -20,11 +24,14 @@
 <!--    <bean class="org.springtutorial.autoWired.Book" name="book" autowire="byType">-->
 <!--        <property name="bName" value="Spring Conent"/>-->
 <!--    </bean>-->
-<!--    <bean class="org.springtutorial.autoWired.Book" name="book">-->
-<!--        <constructor-arg value="Spring Boot" type="String"/>-->
-<!--    </bean>-->
     <bean class="org.springtutorial.autoWired.Book" name="book">
-        <property name="bName" value="Spring Book"/>
+        <constructor-arg value="Spring Boot" type="String"/>
     </bean>
+<!--    <bean class="org.springtutorial.autoWired.Book" name="book">-->
+<!--        <property name="bName" value="Spring Book"/>-->
+<!--    </bean>-->
+<!--    <bean class="org.springtutorial.autoWired.Book" name="book2">-->
+<!--        <property name="bName" value="Spring Book"/>-->
+<!--    </bean>-->
 </beans>
 

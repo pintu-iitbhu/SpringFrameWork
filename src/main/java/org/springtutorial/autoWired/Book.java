@@ -1,10 +1,12 @@
 package org.springtutorial.autoWired;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Book {
     private String bName;
 
+    @Qualifier("cName1")
     @Autowired
     private Chapter cName;
 
@@ -12,6 +14,7 @@ public class Book {
         super();
     }
 
+    @Autowired
     public Book(String bName, Chapter cName) {
         this.bName = bName;
         this.cName = cName;
