@@ -10,7 +10,38 @@
     <!--        <property name="address" value="Saran" />-->
     <!--        <property name="contact" value="9876234599"/>-->
     <!--    </bean>-->
-    <bean class="org.springtutorial.core.Employ" name="employ1" p:name="pintu Ydava" p:address="Saran Chhapra" p:contact="9758385857"/>
+    <bean class="org.springtutorial.core.Employ" name="employ1" p:name="pintu Ydava" p:address="Saran Chhapra" p:contact="9758385857">
+
+        <property name="empPreComp">
+            <list>
+                <value>Samsung</value>
+                <value>Google</value>
+                <value>Amazon</value>
+            </list>
+        </property>
+        <property name="empStacks">
+            <set>
+                <value>Java</value>
+                <value>Python</value>
+                <value>Spring</value>
+            </set>
+        </property>
+        <property name="empExpences">
+            <map>
+                <entry key="sde1" value="10000" />
+                <entry key="sde2" value="200000"/>
+                <entry key="SDE3" value="400000"/>
+            </map>
+        </property>
+
+        <property name="cred">
+            <props>
+                <prop key="userName">pintu_yadav</prop>
+                <prop key="password">edith123</prop>
+            </props>
+        </property>
+
+    </bean>
 
 
 
