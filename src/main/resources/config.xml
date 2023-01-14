@@ -1,24 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean class="org.springtutorial.core.Employ" name="employ1">
-        <property name="name">
-            <value>Pintu Yadav</value>
-        </property>
-        <property name="address">
-            <value>Saran</value>
-        </property>
-        <property name="contact">
-            <value>98577649578</value>
-        </property>
-    </bean>
+    <!--    <bean class="org.springtutorial.core.Employ" name="employ1">-->
+    <!--        <property name="name" value="Pintu Yadav"/>-->
+    <!--        <property name="address" value="Saran" />-->
+    <!--        <property name="contact" value="9876234599"/>-->
+    <!--    </bean>-->
+    <bean class="org.springtutorial.core.Employ" name="employ1" p:name="pintu Ydava" p:address="Saran Chhapra" p:contact="9758385857"/>
 
 
 
-        <!-- more bean definitions go here -->
+    <!-- more bean definitions go here -->
 </beans>
 
 
