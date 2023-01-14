@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="055354d5-ac61-4f29-bd9a-b2fabd93c941" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/springtutorial/constructInject/Certi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/springtutorial/constructInject/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ciConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/springtutorial/lifeCycle/Food.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/lifeCycleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/springtutorial/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/springtutorial/App.java" afterDir="false" />
     </list>
