@@ -10,5 +10,10 @@
         <constructor-arg value="60" type="int"/>
     </bean>
 
+    <bean class="org.springtutorial.lifeCycle.Drinks" name="drink1" >
+        <constructor-arg value="Cocola" type="String"/>
+        <constructor-arg value="90" type="int"/>
+    </bean>
+
 </beans>
 

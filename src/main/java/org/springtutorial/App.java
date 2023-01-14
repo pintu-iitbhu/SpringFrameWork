@@ -5,6 +5,7 @@ import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springtutorial.constructInject.Person;
 import org.springtutorial.core.Employ;
+import org.springtutorial.lifeCycle.Drinks;
 import org.springtutorial.lifeCycle.Food;
 import org.springtutorial.ref.Student;
 
@@ -30,6 +31,10 @@ public class App
         Food food= lifeCycleContext.getBean("food1", Food.class);
         System.out.println(food);
         lifeCycleContext.registerShutdownHook();
+
+        //Implementoing bean life cycle using interface
+        Drinks drink = lifeCycleContext.getBean("drink1", Drinks.class);
+        System.out.println(drink);
 
 
     }
