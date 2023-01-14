@@ -7,7 +7,7 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
-
+    <context:annotation-config></context:annotation-config>
 
     <bean class="org.springtutorial.autoWired.Chapter" name="cName">
         <constructor-arg value="Java" type="String"/>
@@ -20,8 +20,11 @@
 <!--    <bean class="org.springtutorial.autoWired.Book" name="book" autowire="byType">-->
 <!--        <property name="bName" value="Spring Conent"/>-->
 <!--    </bean>-->
-    <bean class="org.springtutorial.autoWired.Book" name="book" autowire="constructor">
-        <constructor-arg value="Spring Boot" type="String"/>
+<!--    <bean class="org.springtutorial.autoWired.Book" name="book">-->
+<!--        <constructor-arg value="Spring Boot" type="String"/>-->
+<!--    </bean>-->
+    <bean class="org.springtutorial.autoWired.Book" name="book">
+        <property name="bName" value="Spring Book"/>
     </bean>
 </beans>
 
