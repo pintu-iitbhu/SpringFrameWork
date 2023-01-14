@@ -1,7 +1,11 @@
 package org.springtutorial.autoWired;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class Book {
     private String bName;
+
+    @Autowired
     private Chapter cName;
 
     public Book() {
@@ -24,6 +28,7 @@ public class Book {
     public Chapter getcName() {
         return cName;
     }
+
 
     public void setcName(Chapter cName) {
         this.cName = cName;
