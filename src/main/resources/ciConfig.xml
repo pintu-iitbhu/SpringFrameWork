@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="org.springtutorial.constructInject.Certi" name="certi1">
+        <constructor-arg value="Spring" type="String"/>
+        <constructor-arg value="Approved" type="String"/>
+    </bean>
+    <bean class="org.springtutorial.constructInject.Person" name="p1">
+        <constructor-arg value="Pintu yadav" type="String"/>
+        <constructor-arg value="Saran" type="String"/>
+        <constructor-arg value="23" type="int"/>
+        <constructor-arg ref="certi1"/>
+    </bean>
+</beans>
+
