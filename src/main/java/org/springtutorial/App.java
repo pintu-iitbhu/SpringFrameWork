@@ -3,6 +3,8 @@ package org.springtutorial;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springtutorial.autoWired.Book;
+import org.springtutorial.autoWired.Chapter;
 import org.springtutorial.constructInject.Person;
 import org.springtutorial.core.Employ;
 import org.springtutorial.lifeCycle.Drinks;
@@ -28,18 +30,22 @@ public class App
 //        System.out.println(p1);
 
         //To run the destroy method we need to implement pre shutdown hook
-        AbstractApplicationContext lifeCycleContext=new ClassPathXmlApplicationContext("lifeCycleConfig.xml");
-        Food food= lifeCycleContext.getBean("food1", Food.class);
-        System.out.println(food);
-        lifeCycleContext.registerShutdownHook();
+//        AbstractApplicationContext lifeCycleContext=new ClassPathXmlApplicationContext("lifeCycleConfig.xml");
+//        Food food= lifeCycleContext.getBean("food1", Food.class);
+//        System.out.println(food);
+//        lifeCycleContext.registerShutdownHook();
+//
+//        //Implementoing bean life cycle using interface
+//        Drinks drink = lifeCycleContext.getBean("drink1", Drinks.class);
+//        System.out.println(drink);
+//
+//        //Implementoing bean life cycle using Annotations
+//        Starters starter = lifeCycleContext.getBean("starter1", Starters.class);
+//        System.out.println(starter);
 
-        //Implementoing bean life cycle using interface
-        Drinks drink = lifeCycleContext.getBean("drink1", Drinks.class);
-        System.out.println(drink);
-
-        //Implementoing bean life cycle using Annotations
-        Starters starter = lifeCycleContext.getBean("starter1", Starters.class);
-        System.out.println(starter);
+        ApplicationContext autoContext = new ClassPathXmlApplicationContext("autoWiredConfig.xml");
+        Book book = autoContext.getBean("book", Book.class);
+        System.out.println(book);
 
 
     }
