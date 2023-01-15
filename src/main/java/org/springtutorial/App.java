@@ -1,6 +1,7 @@
 package org.springtutorial;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springtutorial.autoWired.Book;
@@ -10,6 +11,8 @@ import org.springtutorial.core.Employ;
 import org.springtutorial.lifeCycle.Drinks;
 import org.springtutorial.lifeCycle.Food;
 import org.springtutorial.lifeCycle.Starters;
+import org.springtutorial.removeXML.Hotel;
+import org.springtutorial.removeXML.JavaConfig;
 import org.springtutorial.streotype.Student;
 
 public class App 
@@ -47,9 +50,16 @@ public class App
 //        Book book = autoContext.getBean("book", Book.class);
 //        System.out.println(book);
 
-        ApplicationContext streoTypeContext = new ClassPathXmlApplicationContext("streotypeConfig.xml");
-        Student student1= streoTypeContext.getBean("stud1", Student.class);
-        System.out.println(student1);
+//        ApplicationContext streoTypeContext = new ClassPathXmlApplicationContext("streotypeConfig.xml");
+//        Student student1= streoTypeContext.getBean("stud1", Student.class);
+//        System.out.println(student1);
+
+        ApplicationContext xmlContext= new AnnotationConfigApplicationContext(JavaConfig.class);
+//        Hotel hotel = xmlContext.getBean("hot", Hotel.class);
+//        System.out.println(hotel);
+
+        Hotel hotel = xmlContext.getBean("getHotel", Hotel.class);
+        System.out.println(hotel);
 
 
     }
