@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="055354d5-ac61-4f29-bd9a-b2fabd93c941" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/springtutorial/streotype/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/streotypeConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/springtutorial/autoWired/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/springtutorial/autoWired/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/autoWiredConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/autoWiredConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/springtutorial/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/springtutorial/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

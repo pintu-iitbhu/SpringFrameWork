@@ -10,7 +10,7 @@ import org.springtutorial.core.Employ;
 import org.springtutorial.lifeCycle.Drinks;
 import org.springtutorial.lifeCycle.Food;
 import org.springtutorial.lifeCycle.Starters;
-import org.springtutorial.ref.Student;
+import org.springtutorial.streotype.Student;
 
 public class App 
 {
@@ -42,10 +42,14 @@ public class App
 //        //Implementoing bean life cycle using Annotations
 //        Starters starter = lifeCycleContext.getBean("starter1", Starters.class);
 //        System.out.println(starter);
+//
+//        ApplicationContext autoContext = new ClassPathXmlApplicationContext("autoWiredConfig.xml");
+//        Book book = autoContext.getBean("book", Book.class);
+//        System.out.println(book);
 
-        ApplicationContext autoContext = new ClassPathXmlApplicationContext("autoWiredConfig.xml");
-        Book book = autoContext.getBean("book", Book.class);
-        System.out.println(book);
+        ApplicationContext streoTypeContext = new ClassPathXmlApplicationContext("streotypeConfig.xml");
+        Student student1= streoTypeContext.getBean("stud1", Student.class);
+        System.out.println(student1);
 
 
     }
